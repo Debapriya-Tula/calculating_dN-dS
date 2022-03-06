@@ -16,18 +16,6 @@ from io import BytesIO
 
 from values import Values
 
-# to render colored text
-os.system("")  # enables ansi escape characters
-
-COLOR = {
-    "HEADER": "\033[95m",
-    "BLUE": "\033[94m",
-    "GREEN": "\033[92m",
-    "RED": "\033[91m",
-    "ENDC": "\033[0m",
-    "BOLD": "\033[1m",
-}
-
 
 class Page(tk.Toplevel):
     def __init__(self, *args, **kwargs):
@@ -389,15 +377,6 @@ if __name__ == "__main__":
 
     # Bind the function to configure the parent window
     root.bind("<Configure>", resize_image)
-
-    # content = 'CUBCal is a software being developed under the guidance of Dr.S.S Sathapathy, \nan associate professor of computer science and engeneering, Tezpur University.\nThis tool will provide the best alternative to the already existing Codonw software,\nwidely used for codon usage analysis and still under contruction'
-    # text = Text(root)
-    # text.insert(INSERT, content)
-    # text.pack(expand= 1, fill= BOTH)
-    # text.configure(font=("Times", 16, "bold"))
-    # text.tag_config("start", foreground="red")
-    # text.tag_add("start", "1.0", "1.6")
-    # text.tag_add("start", "1.59", "1.76")
 
     # Creating Menubar
     menubar = Menu(root)
